@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDG Mini-Workshop: Geometric Singular Perturbation Theory</title>
+    <style>
+        :root {
+            --primary-color: #0A2342;
+            --accent-color: #1A5B8C;
+            --bg-color: #F4F7F6;
+            --text-color: #333333;
+            --card-bg: #FFFFFF;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0 0 1rem 0;
+            font-size: 2.5rem;
+            line-height: 1.2;
+        }
+
+        header p.dates {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin: 0 0 1.5rem 0;
+            color: #A9D6E5;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .intro {
+            background-color: var(--card-bg);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 3rem;
+            font-size: 1.1rem;
+            border-left: 5px solid var(--accent-color);
+        }
+
+        .session-block {
+            margin-bottom: 3rem;
+        }
+
+        .session-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 1.5rem;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .session-header h2 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        .session-header p {
+            margin: 0.5rem 0 0 0;
+            font-size: 0.95rem;
+        }
+
+        .session-header a {
+            color: #A9D6E5;
+            text-decoration: none;
+            border-bottom: 1px dotted #A9D6E5;
+        }
+
+        .session-header a:hover {
+            color: white;
+        }
+
+        .talk-list {
+            background-color: var(--card-bg);
+            border-radius: 0 0 8px 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .talk {
+            padding: 1.5rem;
+            border-bottom: 1px solid #E0E0E0;
+        }
+
+        .talk:last-child {
+            border-bottom: none;
+        }
+
+        .talk-meta {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .talk-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin: 0 0 0.5rem 0;
+            color: var(--primary-color);
+        }
+
+        .talk-speaker {
+            font-size: 1.1rem;
+            margin: 0 0 1rem 0;
+            font-style: italic;
+        }
+
+        details {
+            background-color: #F9F9F9;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            border: 1px solid #EAEAEA;
+        }
+
+        summary {
+            font-weight: bold;
+            cursor: pointer;
+            color: var(--accent-color);
+            outline: none;
+        }
+
+        summary:hover {
+            color: var(--primary-color);
+        }
+
+        details p {
+            margin-top: 1rem;
+            margin-bottom: 0;
+            font-size: 0.95rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            header h1 { font-size: 2rem; }
+            .container { padding: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>SDG Mini-Workshop in Geometric Singular Perturbation Theory</h1>
+        <p class="dates">March 18 &ndash; March 19</p>
+        <p>University of Sydney</p>
+    </header>
+
+    <div class="container">
+        
+        <div class="intro">
+            <p>This mini-workshop will be held in the "SDG-style" format—which basically means we are prioritising discussion. The idea is to keep the presentations concise and spend the bulk of our time diving into questions & details together.</p>
+            <p><strong>Format:</strong> Students will have a 30-minute block (10 min talk / 5 slides max, 20 min discussion), while faculty will have a 60-minute block (20 min talk / 10 slides max, 40 min discussion) allocated.</p>
+        </div>
+
+        <div class="session-block">
+            <div class="session-header">
+                <h2>Session 1</h2>
+                <p>Wednesday, 18/03 &bull; 10:00 - 12:00<br>
+                Venue: <a href="https://maps.sydney.edu.au/?buildingId=1005164" target="_blank">Eastern Avenue Seminar Room 404</a></p>
+            </div>
+            <div class="talk-list">
+                
+                <div class="talk">
+                    <div class="talk-meta">10:00 - 10:30</div>
+                    <h3 class="talk-title">Multi-parameter singular perturbation analysis of a cell cycle model</h3>
+                    <p class="talk-speaker">Lukas Baumgartner (TU Vienna)</p>
+                    <details>
+                        <summary>Read Abstract</summary>
+                        <p>The cell cycle is often modeled as a nonlinear oscillatory system with pronounced multi-scale structure. We study a five-dimensional ODE model due to Tyson containing many parameters spanning several orders of magnitude. Numerical simulations indicate a robust limit cycle with multiple embedded timescales, but there is no single distinguished small parameter that supports a standard one-parameter slow–fast analysis. <br><br>We therefore pursue a multi-parameter GSPT approach. After eliminating the fastest scale, we obtain a reduction to a four-dimensional slow-manifold. To analyze the induced dynamics we isolate three key small parameters and treat them as independently small, leading to distinct asymptotic regimes depending on their relative size. In particular, we identify a substantial parameter region in which the reduced dynamics collapses to the two-dimensional autocatalator previously studied by Gucwa and Szmolyan. We are currently investigating the deformation of the corresponding cycle and the transitions between regimes, and we emphasize the singular dependence of the bifurcation structure on the ordering of the small parameters.</p>
+                    </details>
+                </div>
+
+                <div class="talk">
+                    <div class="talk-meta">10:30 - 11:00</div>
+                    <h3 class="talk-title">Geometric Methods for Studying Multi-Scale Phenomena Arising from Switching</h3>
+                    <p class="talk-speaker">Tyson Rowe (Adelaide University)</p>
+                    <details>
+                        <summary>Read Abstract</summary>
+                        <p>Multiple time-scale phenomena -- such as those observed in biological and neuronal systems -- often feature switching: a dramatic change in system behaviour in response to variables crossing over a certain threshold. This is typically captured by the transition of one or more variables from slow to fast (or vice versa). In this talk, we begin with a geometric blow-up analysis of the two-dimensional case in which the critical manifold intersects the switching manifold transversely. We then conclude by discussing the dynamical phenomena that arise in three-dimensional systems with a switch.</p>
+                    </details>
+                </div>
+
+                <div class="talk">
+                    <div class="talk-meta">11:00 - 11:30</div>
+                    <h3 class="talk-title">A Geometric Blow-Up of a Tumour Model</h3>
+                    <p class="talk-speaker">Timothy Lapuz (University of Sydney)</p>
+                    <details>
+                        <summary>Read Abstract</summary>
+                        <p>Geometric singular perturbation theory allows for the calculation of the reduced problem on normally hyperbolic critical manifolds. However, when there is a loss of normal hyperbolicity, we require the blow-up technique. In this talk, we will discuss the blow-up of a tumour model first presented by Kuznetsov et. al. in 1994. Here, two initial blow-ups are performed along an axis and at the origin. It turns out that the dynamics in the rescaling charts are also singularly perturbed and the reduced problems on the critical manifolds vanishes.<br><br>
+                        In this talk, the aim is to discuss the following points:<br>
+                        1) Since higher-order terms of the slow vector field and slow manifold are required, the leading-order approximations of the centre manifold in the entry and exit charts may not be suffice.<br>
+                        2) In the rescaling chart of the origin, we also find singular bifurcations. The blow-up technique is then employed again in order to unfold these bifurcations.</p>
+                    </details>
+                </div>
+
+                <div class="talk">
+                    <div class="talk-meta">11:30 - 12:00</div>
+                    <h3 class="talk-title">Shocks in reaction-diffusion equations with two negative diffusivity regions</h3>
+                    <p class="talk-speaker">Tom Miller (Adelaide University)</p>
+                    <details>
+                        <summary>Read Abstract</summary>
+                        <p>Reaction–diffusion equations with a positive–negative–positive diffusivity admit shock solutions that jump across the region where the diffusivity is negative. In general, several distinct shocks may be admissible, and a regularisation term is required to select a specific one. A nonlinear fourth‑order regularisation allows such selection by tuning the nonlinearity, and geometric singular perturbation theory establishes the existence of the corresponding shock travelling waves.<br><br>
+                        We now turn to diffusivities of the form positive–negative–positive–negative–positive, which contain two regions of negative diffusivity. This structure permits qualitatively new behaviour: one may obtain a single long shock that jumps across both negative‑diffusivity intervals, or two shorter shocks, each traversing one interval. Our aim is to investigate whether the nonlinear regularisation can be tuned to select between these competing configurations, and whether the existence of the corresponding travelling waves can again be established using geometric singular perturbation theory.</p>
+                    </details>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="session-block">
+            <div class="session-header">
+                <h2>Session 2</h2>
+                <p>Wednesday, 18/03 &bull; 14:00 - 16:00<br>
+                Venue: <a href="https://maps.sydney.edu.au/?room=F10A.04.446" target="_blank">Law Annex Seminar Room 446</a></p>
+            </div>
+            <div class="talk-list">
+                
+                <div class="talk">
+                    <div class="talk-meta">14:00 - 14:30</div>
+                    <h3 class="talk-title">Catastrophic Separatrices in Three-Time-Scales</h3>
+                    <p class="talk-speaker">Matthew Lim (University of Sydney)</p>
+                    <details>
+                        <summary>Read Abstract</summary>
+                        <p>"Catastrophes" are characteristic of multiple-timescale systems, whereby external forcing can result in abrupt and potentially irreversible reorganisation in system state. The catastrophic separatrix, which separates catastrophic and non-catastrophic solutions, is thereby of crucial importance in Earth System Science and the detection of "planetary boundaries". In the two-timescale case, the separatrix is a maximal canard passing through an associated folded singularity. Less is known in the three-timescale (3TS) case. We show that the Canard-Delayed-Hopf point (CDH) is the organising centre of catastrophic dynamics arising in a ramped 3TS system and explore associated unfoldings of into delayed-Hopf and folded singularities. We do this within the context of a tritrophic Rosenzweig-MacArthur ecological model.</p>
+                    </details>
+                </div>
+
+                <div class="talk">
+                    <div class="talk-meta">14:30 - 15:00</div>
+                    <h3 class="talk-title">Rigorous and Automated Non-dimensionalisation, Preprocessing, and Reduction of Biochemical Reaction Networks</h3>
+                    <p class="talk-speaker">Georgio Hawi (University of Sydney)</p>
+                    <details>
+                        <summary>Read Abstract</summary>
+                        <p>Mathematical models provide a powerful framework for analysing the dynamics of biochemical reaction networks (BCRNs), with principled reduction via systematic, model-independent methods being of vital importance. In this talk, we discuss algorithmic approaches for fast yet rigorous non-dimensionalisation, preprocessing, and reduction of BCRNs, without restriction to low-dimensional models, unlike many current approaches. Using the parametrisation method, the constructive counterpart to Tikhonov–Fenichel theory, together with techniques from algebraic geometry and linear algebra, we automate the end-to-end reduction of a wide class of BCRNs. Importantly, the true power of the parametrisation method lies in its ability to deal with systems exhibiting multiple timescales, where standard GSPT approaches can fail. We demonstrate the approach by rigorously reducing several real-world BCRNs, establishing its utility and showing that even low-order reduced models can achieve high fidelity and accuracy.</p>
+                    </details>
+                </div>
+
+                <div class="talk">
+                    <div class="talk-meta">15:00 - 16:00</div>
+                    <h3 class="talk-title">Center conditions and cyclicity for generic planar polynomial vector fields</h3>
+                    <p class="talk-speaker">Warwick Tucker (Monash University)</p>
+                    <details>
+                        <summary>Read Abstract</summary>
+                        <p>We study the center-focus problem for planar polynomial vector fields, which can be viewed as a local version of Hilbert’s 16th problem. Based on a Lyapunov function approach, we establish novel results regarding the center-focus conditions. More precisely, under generic conditions, and for any degree of a polynomial vector field, we find an upper bound on the size of the Bautin ideal generated by the Lyapunov constants. This also provides an upper bound on the cyclicity of the systems we consider. This is joint work with Yovani Villanueva, Universidade Federal de Goiás, Goiás, Brasil.</p>
+                    </details>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="session-block">
+            <div class="session-header">
+                <h2>Session 3</h2>
+                <p>Thursday, 19/03 &bull; 10:00 - 12:00<br>
+                Venue: <a href="https://maps.sydney.edu.au/?room=F10A.01.101" target="_blank">Law Annex Lecture Theatre 101</a></p>
+            </div>
+            <div class="talk-list">
+                
+                <div class="talk">
+                    <div class="talk-meta">10:00 - 11:00</div>
+                    <h3 class="talk-title">What's left to be done in GSPT?</h3>
+                    <p class="talk-speaker">Peter Szmolyan (TU Vienna)</p>
+                    <details>
+                        <summary>Read Abstract</summary>
+                        <p>GSPT has become a powerful and versatile tool for the study of multiscale dynamical systems, yet important questions remain unresolved. I will highlight some recent developments, but the main emphasis will be on open problems, conceptual challenges, and possible future directions, with the goal of initiating substantial discussion.</p>
+                    </details>
+                </div>
+
+                <div class="talk">
+                    <div class="talk-meta">11:00 - 12:00</div>
+                    <h3 class="talk-title">Spatially-periodic canards in the Brusselator in 1- and 2-space dimensions</h3>
+                    <p class="talk-speaker">Theodore Vo (Monash University)</p>
+                    <details>
+                        <summary>Read Abstract</summary>
+                        <p>We study the Brusselator PDE, which has monostable kinetics, in 1 space dimension in the limit in which the diffusivity of the activator is much smaller than that of the inhibitor. We show that families of spatially-periodic canard solutions emerge from a subcritical singular Turing bifurcation. These spatial canard solutions appear to guide the evolution of solutions of the PDE to the attractors. We then turn our attention to the Brusselator PDE in 2 space dimensions and explore some novel patterns that emerge from the spatial canard dynamics.</p>
+                    </details>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="session-block">
+            <div class="session-header">
+                <h2>Session 4</h2>
+                <p>Thursday, 19/03 &bull; 14:00 - 16:00<br>
+                Venue: <a href="https://maps.sydney.edu.au/?room=F10A.04.446" target="_blank">Law Annex Seminar Room 446</a></p>
+            </div>
+            <div class="talk-list">
+                
+                <div class="talk">
+                    <div class="talk-meta">14:00 - 15:00</div>
+                    <h3 class="talk-title">Geometric Blow-up in PDEs… Has it worked? Where to from here?</h3>
+                    <p class="talk-speaker">Sam Jelbart (Adelaide University)</p>
+                    <details>
+                        <summary>Read Abstract</summary>
+                        <p>Despite some notable progress, it seems pretty fair to say that the question of whether the geometric blow-up method - our go-to method for understanding the dynamics near singular points in slow-fast ODEs - can be developed and applied in a useful way to the study of PDE dynamics, is still quite open. After attempting to summarise recent efforts by to address this question, I will move on to a more in-depth consideration of one approach in particular, and conclude with a list of what I consider to be wide open questions in this field. The talk is sure to raise more questions than it answers, and I will be more than grateful for ideas!</p>
+                    </details>
+                </div>
+
+                <div class="talk">
+                    <div class="talk-meta">15:00 - 16:00</div>
+                    <h3 class="talk-title">GSPT from a Banach point-of-view: spectral splitting & loss of normal hyperbolicity</h3>
+                    <p class="talk-speaker">Martin Wechselberger (University of Sydney)</p>
+                    <details>
+                        <summary>Read Abstract</summary>
+                        <p>This talk discusses a coordinate-independent GSPT framework for Banach spaces. The idea is to construct extended centre manifolds using Riesz projections to reduce infinite-dimensional periodic and spatial systems to finite-dimensional ODEs. This provides the means to, e.g., averaging theory, and enables the study of spatio-temporal canards.</p>
+                    </details>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; SDG Mini-Workshop in Geometric Singular Perturbation Theory</p>
+    </footer>
+
+</body>
+</html>
