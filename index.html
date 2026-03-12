@@ -23,11 +23,17 @@
         }
 
         header {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 4rem 2rem;
-            text-align: center;
-        }
+    /* Use your photo as the background */
+    background: linear-gradient(rgba(10, 35, 66, 0.8), rgba(10, 35, 66, 0.8)), url('carslaw-photo.jpg');
+    /* This makes the image cover the whole banner without stretching */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    color: white;
+    padding: 6rem 2rem; /* I've increased the top and bottom padding slightly to show off the photo more */
+    text-align: center;
+}
 
         header h1 {
             margin: 0 0 1rem 0;
